@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #F7F7F7;
+    color: #000000;
+}
+*::selection{
+    color: white;
+    background-color: black;
+}
+#cursor{
+    height: 250px;
+    width: 250px;
+    background-color: #E7CCCC;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+}
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 1vw;
+    padding-top: 20vh;
+}
+#page1 h1{
+    font-size: 15vw;
+    font-family: futura;
+    text-transform: uppercase;
+    line-height: 14vw;
+    letter-spacing: -15px;
+}
+.heading{
+    display: flex;
+    gap: 30px;
+}
+#video-Container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#video-Container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+#video-Container #play{
+    padding: 3vw 2vw;
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 800;
+    position: fixed;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(0);
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    justify-content: space-between;
+    position: relative;
+}
+#page2 .elem{
+    height: 100%;
+    width: 34%;
+    padding: 3vw 1vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    scale: 1.1;
+}
+.elem .detailBar{
+    height: 50px;
+    width: 300px;
+    border-radius: 50px;
+    z-index: 9;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 2s ease-out;
+}
+.border{
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    width: 100%;
+}
+#page3{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: self-start;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    cursor: pointer;
+}
+.r1{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box{
+    height: 100%;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box img{
+    height: 100%;
+    width: 600px;
+    object-fit: cover;
+}
+#page5{
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.multipleOptionRow{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.option p{
+    transition: all 0s ease-in-out;
+}
+.option p:hover{
+    color:lightslategray;
+    cursor: pointer;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 40px;
+    line-height: 7vw;
+    letter-spacing: -8px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.sendBtn{
+    padding: 20px 60px;
+    background-color: #000000;
+    color:#ffffff;
+    border-radius: 50px;
+    font-weight: 500;
+    border: none;
+}
+.sendBtn:hover{
+    color:lightslategray;
+    cursor: pointer;
+}
+.text2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
+}
